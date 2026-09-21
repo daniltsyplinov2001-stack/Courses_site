@@ -1,0 +1,206 @@
+.basket-page__catalog {
+    background-image: url(../img/heroPageBasket.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $color-whiteText;
+}
+
+.hero-basket {
+    padding-top: 127px;
+    padding-bottom: 126px;
+}
+
+.hero-basket__title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    max-width: 760px;
+}
+
+.cart {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+
+    &__img {
+        width: 173px;
+        height: 173px;
+    }
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &-name {
+        font-size: 16px;
+    }
+
+    &__item {
+        border-top: .5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__content {
+        grid-column: span 8;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__info {
+        max-width: 276px;
+    }
+
+    &__title {
+        padding: 0 0 14px 0;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        color: #000000;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        margin-bottom: 12px;
+        padding: 0 0 16px 0;
+    }
+
+    &__pracecard {
+        padding-bottom: 15px;
+    }
+
+    &__pracecard-new {
+        font-weight: $font-weight-500;
+        font-size: 16px;
+        line-height: 29px;
+        color: #050505;
+    }
+
+    &-count {
+        width: 71px;
+        height: 51px;
+        background-color: $background-grey;
+        border: none;
+        border-radius: 10px;
+        padding-left: 17px;
+    }
+
+    &__link-box {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link {
+        color: #000000;
+        line-height: 100%;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__form {
+        grid-column: span 4;
+        min-height: 556px;
+        background-color: $background-grey;
+        border-radius: 20px;
+        padding: 42px 30px 154px 30px;
+    }
+
+    &__form-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &-inp {
+        background-color: $background-grey;
+        border: none;
+        border-bottom: .5px solid #CACDD8;
+        margin-top: 40px;
+
+        &::placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: "Montserrat";
+        }
+    }
+}
+
+.finish {
+    display: flex;
+    flex-direction: column;
+    padding-top: 64px;
+
+    &__info {
+        font-size: $font-size-24;
+        font-weight: $font-weight-400;
+        text-align: center;
+    }
+
+    &__info-price {
+        font-weight: $font-weight-500;
+    }
+
+    &__btn {
+        margin-top: 18px;
+        border-radius: 20px;
+        border: 1.5px solid black;
+        padding: 10px 0 10px 0;
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        animation: buttonAnimation 1s ease;
+    }
+}
+
+.clear-busket {
+    padding: 10px 33px;
+    border-radius: 20px;
+    border: 1px black solid;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.continue-shopping {
+    padding: 10px 21px;
+    border-radius: 20px;
+    border: 1px black solid;
+    background-color: white;
+    margin-left: 7px;
+    cursor: pointer;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.clear-busket,
+.continue-shopping {
+    &:hover {
+        color: white;
+        background-color: #000000;
+    }
+}
